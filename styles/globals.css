@@ -1,9 +1,18 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0%;
+  margin: 0%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /*background-image: linear-gradient(to bottom right, #0e85a3, #03baaa);*/
+  background-color: white;
+  background-image: linear-gradient(to bottom right, #0e85a3, #03baaa);
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right, #0e85a3, #03baaa) no-repeat 0 0
+    fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 a {
@@ -13,4 +22,52 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255, 254, 254, 0.2);
+  border-radius: 5% 5%;
+  overflow: hidden;
+  display: inline-block;
+  min-height: fit-content;
+  padding-bottom: 2%;
+}
+
+.main:hover,
+.launch:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.title {
+  padding: 2rem;
+  margin-top: auto;
+  margin-bottom: 5rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+}
+
+form {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  text-align: left;
+}
+
+.launch {
+  background-color: seashell;
+  color: black;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
